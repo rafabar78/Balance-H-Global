@@ -1,0 +1,32 @@
+Guía de Inicio Rápido: Motor de Inteligencia Hídrica
+Esta guía describe los pasos para ejecutar el análisis de balance hídrico multitemporal sin necesidad de configuraciones locales complejas.
+
+1. Acceso al Entorno de Ejecución
+Haz clic en el botón "Open in Colab" ubicado en el encabezado del repositorio.
+
+Inicia sesión con una cuenta de Google que tenga acceso a Google Earth Engine (GEE).
+
+Si no tienes acceso, puedes registrarte de forma gratuita para fines de investigación en: https://earthengine.google.com/
+
+2. Configuración del Proyecto y Autenticación
+En la primera celda del código, localiza la variable PROJECT_ID.
+
+Sustituye el valor predeterminado por tu propio ID de Proyecto de Google Cloud.
+
+Al ejecutar la celda, sigue el enlace de autenticación que aparecerá para vincular tu sesión con GEE.
+
+3. Definición de Parámetros de Análisis
+Para adaptar el motor a tu zona de interés, modifica las siguientes variables en el bloque de configuración:
+
+Coordenadas: Ingresa la latitud y longitud del punto de estudio.
+
+Rango Temporal: Define la fecha de inicio (start_date) y fin (end_date) para la serie histórica.
+
+Buffer: El sistema utiliza un radio predeterminado de 2,750 metros (5.5 km de diámetro) para asegurar la integridad estadística con el píxel de los sensores CHIRPS (0.05°).
+
+4. Procesamiento y Exportación
+Ejecuta todas las celdas en orden (Runtime > Run all).
+
+El sistema procesará las colecciones satelitales CHIRPS (Precipitación) y ERA5-Land (Temperatura/ETP).
+
+Al finalizar, podrás visualizar los gráficos interactivos y descargar los resultados en formato CSV para su integración en herramientas como Excel o Power BI.
