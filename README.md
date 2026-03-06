@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rafabar78/Balance-H-Global/blob/main/Balance_Hídrico_Global.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rafabar78/Balance-H-Global/blob/main/Balance_Hidrico_Global.ipynb)
 
 # Global Hydro-Intelligence Tool
 Geospatial Engine for Multi-temporal Water Balance & Climate Metrics
